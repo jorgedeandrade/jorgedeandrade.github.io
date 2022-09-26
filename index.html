@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - AluraFlix v010 Aula 04/05</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+
+<head>
+  <title>
+    Imersão Dev - Aula 05
+  </title>
+</head>
+
+<body>
+  <div id='detalhe'>
+    <div class='detalhe-content'>
+      <div class="detalhe-div-botao">
+        <button id='btnFecharDetalhe' onclick="fecharDetalhe()">X
+        </button>
+      </div>
+      <div id="detalhe-imagem">
+        <img src="https://i.pinimg.com/474x/c1/19/30/c11930cb77de79598c3d4b1788af9835.jpg">
+      </div>
+
+      <div id="detalhe-informes">
+        <div id="detalhe-nome">
+        </div>
+        <div id="detalhe-descricao">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class='container'>
+
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="imersao-logo" alt="" onclick="stringSearch()">
+    <h1 class='page-title'>Bem vindo à AluraFlix</h1>
+    <h1 id='page-subtitle' class="page-subtitle">Clique na imagem para detalhes</h1>
+    <h1 id='page-alert' class="page-alert"></h1>
+    <div class="form-wrapper">
+      <input type="text" id="inputNome" placeholder="Nome do filme">
+      <input type="text" id="inputImagem" placeholder="Endereço da imagem">
+      <input type="text" id="inputDescricao" placeholder="Descrição">
+    </div>
+    <a href="https://alura.com.br/" target="_blank">
+      <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+
+    <div>
+      <button id='btnAdicionar' onclick="adicionar()">Adicionar Filme</button>
+      <button id='btnRemover' onclick="mostraTelaRemover()">Remover Filme</button>
+      <button id="btnBuscar" onclick="buscar()">Buscar Filme</button>
+      <button id="btnMostrar" onclick="recuperar()">Recuperar lista Inicial </button>
+      <button id="btnRemoverTodos" onclick="removerTodos()">Remover Todos</button>
+      <button id="btnVoltar" class="btnVoltar" onclick="voltar()">Voltar</button>
+    </div>
+
+    <div id="listaFilmes">
+    </div>
+    <a href="https://alura.com.br/" target="_blank">
+      <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+  </div>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
