@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-04-aluraflix-e-filmes.png");
+  background-color: #000000;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+#detalhe {
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000aa;
+  display: none;
+}
+
+.detalhe-content {
+  width: 90vw;
+  margin: 5vw;
+  border-radius: 20px;
+  background-color: #000000aa;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.detalhe-div-botao {
+  position: absolute;
+  width: 90vw;
+  text-align: right;
+}
+
+#btnFecharDetalhe {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  margin-top: 20px;
+  background-color: #ffffffaa;
+}
+
+#detalhe-imagem img {
+  height: 70vh;
+  margin-top: 5vh;
+  margin-left: 5vh;
+}
+
+#detalhe-informes {
+  max-width: 54vw;
+  margin-top: 5vh;
+}
+
+#detalhe-nome {
+  height: 10vh;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+#detalhe-descricao {
+  margin-top: 4vh;
+  max-height: 55vh;
+  font-size: 14px;
+  color: #ffffff;
+  overflow: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 50x;
+}
+.page-subtitle {
+  color: #ffff90;
+  font-size: 16pt;
+  margin: 0 0 5px;
+}
+
+.page-alert {
+  color: #ffff90;
+  font-size: 16pt;
+  margin: 0 0 5px;
+}
+
+.imersao-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.btnVoltar {
+  margin-top: 30px;
+  display: none;
+}
+
+#listaFilmes img {
+  margin: 10px;
+  width: 200px;
+  height: 250px;
+}
+
+.form-wrapper input {
+  width: 200px;
+  border-color: #202060;
+  color: #505050;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 10pt;
+  margin: 10px auto;
+  border-radius: 6px;
+}
+
+input {
+  border-color: #202060;
+  color: #505050;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 10pt;
+  border-radius: 6px;
+  text-align: center;
+  display: none;
+}
+
+button {
+  width: 200px;
+  border-color: #202060;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 10pt;
+  margin: 10px auto;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#listaFilmes img:hover {
+  transition: 0.5s all;
+  transform: scale(1.1);
+}
